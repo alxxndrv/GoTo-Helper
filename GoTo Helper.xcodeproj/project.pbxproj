@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0400D543230602F400CF92E3 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0400D542230602F400CF92E3 /* ScheduleCollectionViewCell.swift */; };
 		041DC8EB2303F1570021DE00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC8EA2303F1570021DE00 /* AppDelegate.swift */; };
 		041DC8ED2303F1570021DE00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC8EC2303F1570021DE00 /* SceneDelegate.swift */; };
 		041DC8EF2303F1570021DE00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041DC8EE2303F1570021DE00 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0400D542230602F400CF92E3 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		041DC8E72303F1570021DE00 /* GoTo Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoTo Helper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		041DC8EA2303F1570021DE00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		041DC8EC2303F1570021DE00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				041DC8F32303F1580021DE00 /* Assets.xcassets */,
 				041DC8F52303F1580021DE00 /* LaunchScreen.storyboard */,
 				041DC8F82303F1580021DE00 /* Info.plist */,
+				0400D542230602F400CF92E3 /* ScheduleCollectionViewCell.swift */,
 			);
 			path = "GoTo Helper";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				041DC8EF2303F1570021DE00 /* ViewController.swift in Sources */,
 				041DC8EB2303F1570021DE00 /* AppDelegate.swift in Sources */,
+				0400D543230602F400CF92E3 /* ScheduleCollectionViewCell.swift in Sources */,
 				041DC8ED2303F1570021DE00 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

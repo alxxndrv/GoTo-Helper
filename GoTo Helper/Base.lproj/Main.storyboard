@@ -1,24 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QOn-KN-CTG">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--GoTo Helper-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoTo_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сейчас идёт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6n-hT-mKl">
+                                <rect key="frame" x="16" y="56" width="130" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Третья пара" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vht-sf-WWR">
+                                <rect key="frame" x="16" y="90" width="102" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Следующее" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w78-j3-QJi">
+                                <rect key="frame" x="16" y="120" width="124.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перерыв" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq1-oI-Jl9">
+                                <rect key="frame" x="16" y="153.5" width="77" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 мин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vl-N3-F7J">
+                                <rect key="frame" x="302" y="154.5" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zur-pp-fFq">
+                                <rect key="frame" x="16" y="190" width="343" height="30"/>
+                                <state key="normal" title="Просмотреть расписание"/>
+                                <connections>
+                                    <segue destination="j2j-Ub-De1" kind="show" id="wec-rM-fgZ"/>
+                                </connections>
+                            </button>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lI-B4-wsl">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem title="Главная" image="rhombus.fill" catalog="system" id="kWr-os-HwT"/>
+                                    <tabBarItem title="События" image="timer" catalog="system" id="W2T-be-xrU"/>
+                                </items>
+                            </tabBar>
+                        </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="gq1-oI-Jl9" firstAttribute="leading" secondItem="qos-ue-d61" secondAttribute="leading" constant="16" id="6oM-Zi-OzB"/>
+                            <constraint firstItem="F6n-hT-mKl" firstAttribute="top" secondItem="qos-ue-d61" secondAttribute="top" constant="12" id="AAG-WN-NLZ"/>
+                            <constraint firstItem="qos-ue-d61" firstAttribute="trailing" secondItem="7Vl-N3-F7J" secondAttribute="trailing" constant="16" id="EvZ-g3-1s8"/>
+                            <constraint firstItem="w78-j3-QJi" firstAttribute="top" secondItem="Vht-sf-WWR" secondAttribute="bottom" constant="8" id="OSQ-ix-9WE"/>
+                            <constraint firstItem="qos-ue-d61" firstAttribute="trailing" secondItem="Zur-pp-fFq" secondAttribute="trailing" constant="16" id="U8r-HN-N4B"/>
+                            <constraint firstItem="gq1-oI-Jl9" firstAttribute="top" secondItem="w78-j3-QJi" secondAttribute="bottom" constant="7.3300000000000001" id="VDh-A7-1C7"/>
+                            <constraint firstItem="F6n-hT-mKl" firstAttribute="leading" secondItem="qos-ue-d61" secondAttribute="leading" constant="16" id="WZi-yj-Szo"/>
+                            <constraint firstItem="Zur-pp-fFq" firstAttribute="leading" secondItem="qos-ue-d61" secondAttribute="leading" constant="16" id="Ych-cl-hNc"/>
+                            <constraint firstItem="9lI-B4-wsl" firstAttribute="bottom" secondItem="qos-ue-d61" secondAttribute="bottom" id="YxL-xj-SyN"/>
+                            <constraint firstItem="Vht-sf-WWR" firstAttribute="leading" secondItem="qos-ue-d61" secondAttribute="leading" constant="16" id="aD4-KL-NH8"/>
+                            <constraint firstItem="7Vl-N3-F7J" firstAttribute="top" secondItem="w78-j3-QJi" secondAttribute="bottom" constant="8" id="cNh-Rs-qXn"/>
+                            <constraint firstItem="9lI-B4-wsl" firstAttribute="trailing" secondItem="qos-ue-d61" secondAttribute="trailing" id="cex-Cd-amG"/>
+                            <constraint firstItem="Zur-pp-fFq" firstAttribute="top" secondItem="7Vl-N3-F7J" secondAttribute="bottom" constant="14.67" id="lDx-ch-pa3"/>
+                            <constraint firstItem="Vht-sf-WWR" firstAttribute="top" secondItem="F6n-hT-mKl" secondAttribute="bottom" constant="7.3300000000000001" id="nKh-GH-KPQ"/>
+                            <constraint firstItem="9lI-B4-wsl" firstAttribute="leading" secondItem="qos-ue-d61" secondAttribute="leading" id="xTh-pa-swn"/>
+                            <constraint firstItem="w78-j3-QJi" firstAttribute="leading" secondItem="qos-ue-d61" secondAttribute="leading" constant="16" id="zNs-LW-pKo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qos-ue-d61"/>
                     </view>
+                    <navigationItem key="navigationItem" title="GoTo Helper" largeTitleDisplayMode="always" id="HEH-vH-ecg">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="JQu-oJ-RFW"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1105" y="114"/>
+        </scene>
+        <!--Расписание-->
+        <scene sceneID="2cV-5A-Aej">
+            <objects>
+                <viewController id="j2j-Ub-De1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAp-4D-ve8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="J7u-cj-jcQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Расписание" largeTitleDisplayMode="always" id="hK4-Ao-xWL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GFw-QQ-uiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105" y="-585"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cTr-og-5h0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QOn-KN-CTG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e55-Md-Nbw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="MBa-Lk-lm3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdI-CQ-kGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="114"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kao-l4-aMr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eis-bw-DZg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dra-Wg-gzL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="j2j-Ub-De1" kind="relationship" relationship="rootViewController" id="vTM-au-TcB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czX-68-HXb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="182" y="-585"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rhombus.fill" catalog="system" width="54" height="64"/>
+        <image name="timer" catalog="system" width="64" height="62"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wec-rM-fgZ"/>
+    </inferredMetricsTieBreakers>
 </document>
