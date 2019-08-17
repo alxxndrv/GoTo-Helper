@@ -94,14 +94,13 @@
         <!--Расписание-->
         <scene sceneID="2cV-5A-Aej">
             <objects>
-                <viewController id="j2j-Ub-De1" sceneMemberID="viewController">
+                <viewController id="j2j-Ub-De1" customClass="ScheduleViewController" customModule="GoTo_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qAp-4D-ve8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QY5-oy-vYT">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QY5-oy-vYT">
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MPR-mv-7rV">
                                     <size key="itemSize" width="375" height="54"/>
@@ -117,14 +116,17 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXN-lS-ck9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXN-lS-ck9">
                                                     <rect key="frame" x="8" y="8" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="kXN-lS-ck9" firstAttribute="top" secondItem="QoL-r7-FLZ" secondAttribute="top" constant="8" id="1M4-qV-dPg"/>
+                                                <constraint firstItem="kXN-lS-ck9" firstAttribute="leading" secondItem="QoL-r7-FLZ" secondAttribute="leading" constant="8" id="fcY-Yh-vER"/>
+                                            </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="375" height="54"/>
                                         <connections>
@@ -133,12 +135,18 @@
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
-                                    <outlet property="dataSource" destination="j2j-Ub-De1" id="HTC-s1-dIk"/>
-                                    <outlet property="delegate" destination="j2j-Ub-De1" id="WeD-yw-d61"/>
+                                    <outlet property="dataSource" destination="j2j-Ub-De1" id="zFi-s8-fbc"/>
+                                    <outlet property="delegate" destination="j2j-Ub-De1" id="l3q-CQ-zg4"/>
                                 </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="leading" secondItem="J7u-cj-jcQ" secondAttribute="leading" id="0XF-Pr-A3V"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="trailing" secondItem="J7u-cj-jcQ" secondAttribute="trailing" id="KGd-hq-EuY"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="top" secondItem="J7u-cj-jcQ" secondAttribute="top" id="b3T-eB-DEm"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="bottom" secondItem="J7u-cj-jcQ" secondAttribute="bottom" id="gey-Fv-iHa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="J7u-cj-jcQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Расписание" largeTitleDisplayMode="always" id="hK4-Ao-xWL"/>
