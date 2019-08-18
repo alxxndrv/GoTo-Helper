@@ -5,6 +5,8 @@ target 'GoTo Helper' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+
   # Pods for GoTo Helper
 
   target 'GoTo HelperTests' do

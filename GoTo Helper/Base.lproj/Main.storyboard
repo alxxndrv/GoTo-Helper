@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QOn-KN-CTG">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,48 +13,48 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GoTo_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сейчас идёт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6n-hT-mKl">
-                                <rect key="frame" x="16" y="56" width="130" height="26.5"/>
+                                <rect key="frame" x="16" y="100" width="130" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Третья пара" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vht-sf-WWR">
-                                <rect key="frame" x="16" y="90" width="102" height="22"/>
+                                <rect key="frame" x="16" y="134" width="102" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Следующее" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w78-j3-QJi">
-                                <rect key="frame" x="16" y="120" width="124.5" height="26.5"/>
+                                <rect key="frame" x="16" y="164" width="124.5" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перерыв" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq1-oI-Jl9">
-                                <rect key="frame" x="16" y="153.5" width="77" height="21"/>
+                                <rect key="frame" x="16" y="197.5" width="77" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 мин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vl-N3-F7J">
-                                <rect key="frame" x="302" y="154.5" width="57" height="21"/>
+                                <rect key="frame" x="341" y="198.5" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zur-pp-fFq">
-                                <rect key="frame" x="16" y="190" width="343" height="30"/>
+                                <rect key="frame" x="16" y="234" width="382" height="30"/>
                                 <state key="normal" title="Просмотреть расписание"/>
                                 <connections>
                                     <segue destination="j2j-Ub-De1" kind="show" id="wec-rM-fgZ"/>
                                 </connections>
                             </button>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lI-B4-wsl">
-                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <tabBarItem title="Главная" image="rhombus.fill" catalog="system" id="kWr-os-HwT"/>
@@ -96,41 +96,39 @@
             <objects>
                 <viewController id="j2j-Ub-De1" customClass="ScheduleViewController" customModule="GoTo_Helper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qAp-4D-ve8">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QY5-oy-vYT">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MPR-mv-7rV">
-                                    <size key="itemSize" width="375" height="54"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MPR-mv-7rV">
+                                    <size key="itemSize" width="409" height="50"/>
+                                    <size key="estimatedItemSize" width="409" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="ZYf-Og-Fpx" customClass="ScheduleCollectionViewCell" customModule="GoTo_Helper" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QoL-r7-FLZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="cell" translatesAutoresizingMaskIntoConstraints="NO" id="sgZ-D8-lnb" customClass="ScheduleCollectionViewCell" customModule="GoTo_Helper" customModuleProvider="target">
+                                        <rect key="frame" x="2.5" y="0.0" width="409" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="toM-Hg-PgH">
+                                            <rect key="frame" x="0.0" y="0.0" width="409" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXN-lS-ck9">
-                                                    <rect key="frame" x="8" y="8" width="42" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDp-PJ-vQ2">
+                                                    <rect key="frame" x="11" y="10" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstItem="kXN-lS-ck9" firstAttribute="top" secondItem="QoL-r7-FLZ" secondAttribute="top" constant="8" id="1M4-qV-dPg"/>
-                                                <constraint firstItem="kXN-lS-ck9" firstAttribute="leading" secondItem="QoL-r7-FLZ" secondAttribute="leading" constant="8" id="fcY-Yh-vER"/>
-                                            </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="375" height="54"/>
+                                        <size key="customSize" width="409" height="50"/>
                                         <connections>
-                                            <outlet property="myLabel" destination="kXN-lS-ck9" id="9Cl-ou-gMA"/>
+                                            <outlet property="myLabel" destination="WDp-PJ-vQ2" id="fmK-P5-qmK"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -142,10 +140,10 @@
                         </subviews>
                         <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="QY5-oy-vYT" firstAttribute="leading" secondItem="J7u-cj-jcQ" secondAttribute="leading" id="0XF-Pr-A3V"/>
-                            <constraint firstItem="QY5-oy-vYT" firstAttribute="trailing" secondItem="J7u-cj-jcQ" secondAttribute="trailing" id="KGd-hq-EuY"/>
-                            <constraint firstItem="QY5-oy-vYT" firstAttribute="top" secondItem="J7u-cj-jcQ" secondAttribute="top" id="b3T-eB-DEm"/>
-                            <constraint firstItem="QY5-oy-vYT" firstAttribute="bottom" secondItem="J7u-cj-jcQ" secondAttribute="bottom" id="gey-Fv-iHa"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="top" secondItem="J7u-cj-jcQ" secondAttribute="top" id="eR9-6g-raO"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="trailing" secondItem="J7u-cj-jcQ" secondAttribute="trailing" id="l6J-LJ-o5J"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="bottom" secondItem="J7u-cj-jcQ" secondAttribute="bottom" id="qfm-4n-c93"/>
+                            <constraint firstItem="QY5-oy-vYT" firstAttribute="leading" secondItem="J7u-cj-jcQ" secondAttribute="leading" id="tpJ-IX-f8q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J7u-cj-jcQ"/>
                     </view>
@@ -153,7 +151,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFw-QQ-uiL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1104.8" y="-585.1574212893554"/>
+            <point key="canvasLocation" x="1102.8985507246377" y="-585.26785714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cTr-og-5h0">
@@ -161,7 +159,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QOn-KN-CTG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e55-Md-Nbw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -179,7 +177,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eis-bw-DZg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dra-Wg-gzL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -7,10 +7,11 @@
 //
 
 import UIKit
-
-class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate  {
+import Firebase
+import FirebaseFirestore
+class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout  {
     let reuseIdentifier = "cell" // also enter this string as the cell identifier in the storyboard
-    var items = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48"]
+    var items = ["lol", "kek", "cheburek"]
     
     
     // MARK: - UICollectionViewDataSource protocol
@@ -25,11 +26,14 @@ class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICo
         
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! ScheduleCollectionViewCell
-        
+        cell.layoutIfNeeded()
+//        let cellSize = CGSize(width: 800, height: 80)
+//        cell.siz
+//        cell
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.myLabel.text = self.items[indexPath.item]
 
-        
+        cell.myLabel.sizeToFit()
         return cell
     }
     
@@ -42,10 +46,12 @@ class ScheduleViewController: UIViewController, UICollectionViewDataSource, UICo
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        let db = Firestore.firestore()
     }
-    
+    //Use for size
+
+
 
     /*
     // MARK: - Navigation
